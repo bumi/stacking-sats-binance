@@ -11,6 +11,11 @@ Use this at your own risk and decide for yourself whether or not you want to run
 Obtain your Binance API Key via the [API settings page](https://www.binance.je/userCenter/createApi.html).
 The key must have the following options enabled: "Read Info" and "Enable Trading"
 
+## 💾 Download it
+
+Simply download the [latest release](https://github.com/bumi/stacking-sats-binance/releases). No additional dependencies required.
+
+
 ## 💰 Run it
 
 ```sh
@@ -126,7 +131,7 @@ Every Sunday 8:00pm
 0 20 * * 0 /home/bitcoin/stacking-sats --apikey=YOURAPIKEY --secret=YOURSECRET stack >> /home/bitcoin/stacking-sats.log 2>&1
 ````
 
-Note: adjust the path to your `stacking-sats` file
+Note: adjust the path to your `stacking-sats` file and check the logs.
 
 
 ## Similar Tools
