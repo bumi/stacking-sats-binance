@@ -1,7 +1,7 @@
 # Stacking Sats on Binance(.je)
 
-This tool automates stacking sats on Binance for you. 
-Run it periodically to automatically place BTC buy orders on binance and 
+This tool automates stacking sats on [Binance](https://www.binance.je/en) for you. 
+Run it periodically to automatically place BTC buy orders and 
 convert a certain percentage of the available EUR balance to BTC.
 
 Use this at your own risk and decide for yourself whether or not you want to run this tool!
@@ -19,6 +19,8 @@ The key must have the following options enabled: "Read Info" and "Enable Trading
 
 ### Help
 ```
+./stacking-sats --help
+
 NAME:
    Stacking Sats on Binance - Automate market orders based on the available EUR balance
 
@@ -44,6 +46,23 @@ GLOBAL OPTIONS:
 ./stacking-sats --apikey=YOURAPIKEY --secret=YOURSECRET stack
 ```
 
+#### Configuration
+Provide the API Key and Secret as global parameter or as environment variables. 
+All other options can be set as parameter.
+
+##### Percentage
+The percentage of the available EUR balance you want to convert to BTC. Default value: 25%
+
+##### Interval
+Guard to prevent too many accidental orders. Checks that the last order is at least X days ago. Default value: 7days
+
+#### Example
+
+```sh
+./stacking-sats --apikey=YOURAPIKEY --secret=YOURSECRET stack --percentage=50 --interval=14
+```
+
+#### Command Help
 ```
 OPTIONS:
    --interval value    Days since the last order. (set to 0 to ignore) (default: 7 days)
