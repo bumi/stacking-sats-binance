@@ -4,7 +4,6 @@ This tool automates stacking sats on [Binance](https://www.binance.je/en) for yo
 Run it periodically to automatically place BTC buy orders and 
 convert a certain percentage of the available EUR balance to BTC.
 
-Use this at your own risk and decide for yourself whether or not you want to run this tool!
 
 ## 🔑 Binance API Key
 
@@ -137,4 +136,11 @@ Note: adjust the path to your `stacking-sats` file and check the logs.
 ## Similar Tools
 
 * [stacking-sats-kraken](https://github.com/dennisreimann/stacking-sats-kraken) by [@dennisreimann](https://twitter.com/dennisreimann)
+
+## Disclaimer
+
+Use this at your own risk and decide for yourself whether or not you want to run this tool!
+Audit the code and check the dependencies ([adshao/go-binance](https://github.com/adshao/go-binance), [urfave/cli/](https://github.com/urfave/cli/)) yourself.
+
+If you have questions or problems, let me know or open an issue.
 
