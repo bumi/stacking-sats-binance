@@ -2,13 +2,19 @@
 
 This tool automates stacking sats on [Binance](https://www.binance.je/en) for you. 
 Run it periodically to automatically place BTC buy orders and 
-convert a certain percentage of the available EUR balance to BTC.
+convert a certain percentage of the available EUR balance to BTC. (Dollar-cost averaging your Bitcoin savings)
+
+## What is stacking sats? What is Dollar-cost averaging?
+
+It is a another way of saying "saving and accumulating Bitcoin".
+It means Dollar-cost averaging (DCA) your Bitcoin investments.
 
 
-## 🔑 Binance API Key
+Dollar-cost averaging is an investment strategy that aims to reduce the impact of volatility on the purchase of assets. It involves buying equal amounts of the asset at regular intervals.
 
-Obtain your Binance API Key via the [API settings page](https://www.binance.je/userCenter/createApi.html).
-The key must have the following options enabled: "Read Info" and "Enable Trading"
+Have a look at the DCA Investment calculator for Bitcoin: [dcabtc.com]https://dcabtc.com/)
+
+
 
 ## 💾 Download it
 
@@ -20,6 +26,12 @@ Simply download the [latest release](https://github.com/bumi/stacking-sats-binan
 ```sh
 ./stacking-sats
 ```
+
+## 🔑 Binance API Key
+To connect your Binance account you need to configure your API Key:
+
+You can obtain the API Key via the [API settings page](https://www.binance.je/userCenter/createApi.html).
+The key must have the following options enabled: "Read Info" and "Enable Trading"
 
 ### Help
 ```
