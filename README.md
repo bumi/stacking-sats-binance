@@ -1,4 +1,4 @@
-# Stacking Sats on Binance(.je)
+# ⚡ Stacking Sats on Binance(.je) ⚡
 
 This tool automates stacking sats on [Binance](https://www.binance.je/en) for you. 
 Run it periodically to automatically place BTC buy orders and 
@@ -6,13 +6,14 @@ convert a certain percentage of the available EUR balance to BTC. (Dollar-cost a
 
 ## What is stacking sats? What is Dollar-cost averaging?
 
+"The act of accumulating satoshis ("sats"), the penny of bitcoin over time. This term emphasizes that even really small accumulations of bitcoin are useful because of the value they will have in the future." ([urban dictionary](https://www.urbandictionary.com/define.php?term=stacking%20sats))
+
 It is a another way of saying "saving and accumulating Bitcoin".
-It means Dollar-cost averaging (DCA) your Bitcoin investments.
 
 
 Dollar-cost averaging is an investment strategy that aims to reduce the impact of volatility on the purchase of assets. It involves buying equal amounts of the asset at regular intervals.
 
-Have a look at the DCA Investment calculator for Bitcoin: [dcabtc.com]https://dcabtc.com/)
+Have a look at the DCA Investment calculator for Bitcoin: [dcabtc.com](https://dcabtc.com/)
 
 
 
@@ -56,7 +57,7 @@ GLOBAL OPTIONS:
    --help, -h       show help (default: false)
 ```
 
-### 🤑 Stacking Sats
+### 🌅 Stacking Sats
 
 ```sh
 ./stacking-sats --apikey=YOURAPIKEY --secret=YOURSECRET stack
