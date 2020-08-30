@@ -17,22 +17,23 @@ Have a look at the DCA Investment calculator for Bitcoin: [dcabtc.com](https://d
 
 
 
-## 💾 Download it
+## 💾 1. Download it
 
 Simply download the [latest release](https://github.com/bumi/stacking-sats-binance/releases). No additional dependencies required.
 
 
-## 💰 Run it
-
-```sh
-./stacking-sats
-```
-
-## 🔑 Binance API Key
+## 🔑 2. Get your Binance API Key
 To connect your Binance account you need to configure your API Key:
 
 You can obtain the API Key via the [API settings page](https://www.binance.je/userCenter/createApi.html).
 The key must have the following options enabled: "Read Info" and "Enable Trading"
+
+
+## 💰 3. Run it
+
+```sh
+./stacking-sats
+```
 
 ### Help
 ```
