@@ -113,7 +113,20 @@ Example: `./stacking-sats stack --maxprice=20000`
 
 
 ## 🗓 Cron Job
-Use cron to run this script periodically
+Use [cron](https://en.wikipedia.org/wiki/Cron) to run stacking-sats periodically:
+
+```sh
+crontab -e
+```
+
+### Example:
+
+Every Sunday 8:00pm 
+```
+0 20 * * 0 /home/bitcoin/stacking-sats --apikey=YOURAPIKEY --secret=YOURSECRET stack >> /home/bitcoin/stacking-sats.log 2>&1
+````
+
+Note: adjust the path to your `stacking-sats` file
 
 
 ## Similar Tools
