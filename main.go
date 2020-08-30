@@ -1,9 +1,9 @@
 package main
 
 import (
-	"context"
-	"fmt"
-	"os"
+  "context"
+  "fmt"
+  "os"
   "log"
   "time"
   "net/http"
@@ -16,13 +16,13 @@ import (
 
 func newBinanceClient(apiKey, secretKey, baseUrl string) binance.Client {
   return binance.Client{
-		APIKey:     apiKey,
-		SecretKey:  secretKey,
-		BaseURL:    baseUrl,
-		UserAgent:  "Binance/golang",
-		HTTPClient: http.DefaultClient,
-		Logger:     log.New(os.Stderr, "Binance-golang ", log.LstdFlags),
-	}
+    APIKey:     apiKey,
+    SecretKey:  secretKey,
+    BaseURL:    baseUrl,
+    UserAgent:  "Binance/golang/stacking-sats",
+    HTTPClient: http.DefaultClient,
+    Logger:     log.New(os.Stderr, "stacking sats ", log.LstdFlags),
+  }
 }
 
 func withdraw(c *cli.Context) error {
