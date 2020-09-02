@@ -68,14 +68,15 @@ func stack(c *cli.Context) error {
   }
 
   var amount float64
+  var freeAmount float64
   for i := range account.Balances {
     if account.Balances[i].Asset == "EUR" {
-      freeAmount, _ := strconv.ParseFloat(account.Balances[i].Free, 10)
+      freeAmount, _ = strconv.ParseFloat(account.Balances[i].Free, 10)
       amount = freeAmount * (c.Float64("percentage")/100.0)
       break
     }
   }
-  fmt.Println(fmt.Sprintf("💰 Current EUR account balance: %f EUR", amount))
+  fmt.Println(fmt.Sprintf("💰 Current EUR account balance: %fEUR", freeAmount))
 
   prices, err := client.NewListBookTickersService().Symbol("BTCEUR").
         Do(context.Background())
