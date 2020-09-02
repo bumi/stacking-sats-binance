@@ -76,6 +76,9 @@ func stack(c *cli.Context) error {
       break
     }
   }
+  if c.IsSet("maxamount") && c.Float64("maxamount") < amount {
+    amount = c.Float64("maxamount")
+  }
   fmt.Println(fmt.Sprintf("💰 Current EUR account balance: %fEUR", freeAmount))
 
   prices, err := client.NewListBookTickersService().Symbol("BTCEUR").
@@ -149,6 +152,11 @@ func main() {
           Usage: "percentage of the available EUR balance to buy",
           Value: 25,
           DefaultText: "25",
+        },
+        &cli.Float64Flag{
+          Name: "maxamount",
+          Usage: "limit of the maximum EUR amount to buy",
+          DefaultText: "percentage of the available balance",
         },
         &cli.Float64Flag{
           Name: "maxprice",
