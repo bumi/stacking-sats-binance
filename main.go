@@ -45,7 +45,7 @@ func list(c *cli.Context) error {
 }
 
 func stack(c *cli.Context) error {
-  fmt.Println(fmt.Sprintf("🎉 Stacking sats! 📅 %s\n", time.Now()))
+  fmt.Println(fmt.Sprintf("\n🎉 Stacking sats! 📅 %s", time.Now()))
 
   client := newBinanceClient(c.String("apikey"), c.String("secret"), c.String("baseurl"));
 
@@ -56,7 +56,7 @@ func stack(c *cli.Context) error {
   }
   if len(lastOrders) != 0 {
     lastOrderAt := lastOrders[0].Time / 1000 // timstamp in milliseconds
-    fmt.Println(fmt.Sprintf("⏱ Last order: %s", time.Unix(lastOrderAt, 0)))
+    fmt.Println(fmt.Sprintf("⏱  Last order: %s", time.Unix(lastOrderAt, 0)))
     if lastOrderAt > time.Now().Unix() - 60*60*24 * c.Int64("interval") {
       return errors.New(fmt.Sprintf("🚨 Last order is less than %d days ago", c.Int64("interval")))
     }
@@ -83,7 +83,7 @@ func stack(c *cli.Context) error {
     return err
   }
   price, _ := strconv.ParseFloat(prices[0].BidPrice, 10)
-  fmt.Println(fmt.Sprintf("📈 Current BTC price: %f EUR", price))
+  fmt.Println(fmt.Sprintf("📈 Current BTC price: %fEUR", price))
   if price > c.Float64("maxprice") {
     return errors.New(fmt.Sprintf("🚨 Price > %fEUR", c.Float64("maxprice")))
   }
@@ -139,19 +139,19 @@ func main() {
       Flags: []cli.Flag{
         &cli.Int64Flag{
           Name: "interval",
-          Usage: "Days since the last order. (set to 0 to ignore)",
+          Usage: "days since the last order (set to 0 to ignore)",
           Value: 7,
           DefaultText: "7 days",
         },
         &cli.Float64Flag{
           Name: "percentage,p",
-          Usage: "Percentage of the available EUR balance",
+          Usage: "percentage of the available EUR balance to buy",
           Value: 25,
           DefaultText: "25",
         },
         &cli.Float64Flag{
           Name: "maxprice",
-          Usage: "Max price in EUR",
+          Usage: "max BTC price in EUR",
           Value: 15000.0,
           DefaultText: "15000.0",
         },
@@ -169,7 +169,7 @@ func main() {
       Flags: []cli.Flag{
         &cli.Int64Flag{
           Name: "limit",
-          Usage: "Lists recent orders",
+          Usage: "Number of orders to list",
           Value: 10,
           DefaultText: "10",
         },
