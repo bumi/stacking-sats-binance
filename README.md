@@ -150,6 +150,7 @@ Note: adjust the path to your `stacking-sats` file and check the logs.
 ## Similar Tools
 
 * [stacking-sats-kraken](https://github.com/dennisreimann/stacking-sats-kraken) by [@dennisreimann](https://twitter.com/dennisreimann)
+* [deltabadger.com](https://deltabadger.com/) - dollar-cost averaging as a service - if you do not want to run it yourself
 
 ## Disclaimer
 
