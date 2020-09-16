@@ -86,6 +86,7 @@ OPTIONS:
    --interval value    Days since the last order. (set to 0 to ignore) (default: 7 days)
    --percentage value  Percentage of the available EUR balance (default: 25)
    --maxprice value    Max price in EUR (default: 15000.0)
+   --maxamount value   Limit of the maximum EUR amount to buy
    --help, -h          show help (default: false)
 ```
 
