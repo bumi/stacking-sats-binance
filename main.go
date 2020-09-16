@@ -156,7 +156,6 @@ func main() {
         &cli.Float64Flag{
           Name: "maxamount",
           Usage: "limit of the maximum EUR amount to buy",
-          DefaultText: "percentage of the available balance",
         },
         &cli.Float64Flag{
           Name: "maxprice",
