@@ -132,7 +132,7 @@ func main() {
     &cli.StringFlag{
       Name: "baseurl",
       Usage: "Binance API URL",
-      Value: "https://api.binance.je",
+      Value: "https://api.binance.com",
     },
   }
   app.Commands = []*cli.Command{
