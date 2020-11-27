@@ -1,6 +1,6 @@
-# ⚡ Stacking Sats on Binance(.je) ⚡
+# ⚡ Stacking Sats on Binance ⚡
 
-This tool automates stacking sats on [Binance](https://www.binance.je/en) for you. 
+This tool automates stacking sats on [Binance](https://www.binance.com) for you. 
 Run it periodically to automatically place BTC buy orders and 
 convert a certain percentage of the available EUR balance to BTC. (Dollar-cost averaging your Bitcoin savings)
 
@@ -25,7 +25,7 @@ Simply download the [latest release](https://github.com/bumi/stacking-sats-binan
 ## 🔑 2. Get your Binance API Key
 To connect your Binance account you need to configure your API Key:
 
-You can obtain the API Key via the [API settings page](https://www.binance.je/userCenter/createApi.html).
+You can obtain the API Key via the [API settings page](https://www.binance.com/en/usercenter/settings/api-management).
 The key must have the following options enabled: "Read Info" and "Enable Trading"
 
 
@@ -54,7 +54,7 @@ COMMANDS:
 GLOBAL OPTIONS:
    --apikey value   Binance API Key [$BINANCE_APIKEY]
    --secret value   Binance secret [$BINANCE_SECRET]
-   --baseurl value  Binance API URL (default: "https://api.binance.je")
+   --baseurl value  Binance API URL (default: "https://api.binance.com")
    --help, -h       show help (default: false)
 ```
 
